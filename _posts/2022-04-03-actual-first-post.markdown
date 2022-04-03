@@ -21,9 +21,9 @@ Yes, you are cool.
 </p>
 {% endif %}
 
-{% assign cats = "Fluffy,Muffy,Duffy" | split ',' %}
+{% assign cats = "Fluffy,Muffy,Duffy" | split: ',' %}
 <ul>
 {% for cat in cats %}
-    <li>{{cat}</li>}
+    <li>{{ cat }}</li>
 {% endfor %}
 </ul>
